@@ -1,0 +1,378 @@
+body {
+	margin: 0;
+	background: rgb(255,161,173);
+	background: linear-gradient(0deg, rgba(255,161,173,1) 0%, 
+				rgba(172,48,59,1) 100%);
+}
+
+/*navigation bar*/
+	.navigbar {
+		background-color: white;
+		color: black;
+		height: 70px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		position: sticky;
+		top: 0;
+		box-shadow: 0px 3px 3px 3px #00000069;
+		z-index: 999;
+		font-family: Calibri;
+	}
+
+	/*A Stitch in Time title*/
+		.navigbar h1 {
+			margin-left: -105px;
+			font-family: Lucida Calligraphy;
+			font-size: 27px;
+			color: black;
+		}
+
+	/*A Stitch in Time logo*/
+		.navigbar img {
+			margin: 16px;
+			width: 30px;
+			margin-left: -10px;
+		}
+
+	/*Navigation links*/
+		.nav-links {
+			width: 60%;
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			color: white;
+		}
+
+		.nav-links a {
+			text-decoration: none;
+			font-size: 20px;
+			color: black;
+		}
+/*Homepage*/
+	/*Banner*/
+		.banner {
+			background-image: url("../images/banner_pic.jpg");
+			height: 90vh;
+			background-repeat: none;
+			background-size: cover;
+			background-color: black;
+			background-position: center;
+			text-align: center;
+			color: white;
+			text-shadow: 2px 2px 6px #000000;
+			font-family: Lucida Calligraphy; 
+			/*flex allows you to edit and align items 
+			against each other*/
+			 display: flex;
+			 flex-direction: column;
+			 justify-content: space-between;
+			 align-items: center;
+		}
+
+		/*banner title*/
+		 .banner h2 {
+		 	margin-top: 430px;
+		 	font-size: 50px;
+		 }
+
+	/*Renting cards*/
+		.renting {
+			width: 900px;
+			margin: 0 auto;
+			margin-top: 68px;
+			font-size: 26px;
+			font-family: Calibri;
+		}
+
+		/*overall section*/
+		.cards {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-gap: 16px;
+		}
+
+		/*individual cards*/
+		.card {
+			background-color: white;
+			padding: 16px;
+			text-align: center;
+			border-radius: 7px;
+			margin-bottom: 40px; 
+		}
+
+		/*card image*/
+		.card img {
+			width: 250px;
+			margin: 0 auto; 
+		}
+
+		/*card title*/
+		.card h3 {
+			font-family: Lucida Calligraphy;
+			margin: 0px;
+		}
+
+		#first {
+			margin-top: 30px;
+		}
+
+	/*Brand ambassodor*/
+		/*title*/
+		.introambassador {
+			font-size: 16px;
+			text-align: left;
+			margin-top: 120px;
+			margin-left: 40px;
+			margin-bottom: -30px;
+			font-family: calibri;
+		}
+
+		/*section quote + picture*/
+		.ambassador {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			margin-right: 40px;
+		}
+
+		/*quote*/
+		.ambassador h3 {
+			font-size: 30px;
+			background-color: black;
+			color: white;
+			padding: 40px;
+			padding-right: 80px;
+			margin-bottom: 50px;
+			margin-right: -49px;
+			font-family: Lucida Calligraphy;
+		}
+
+		#disappear {
+			color: black;
+		}
+
+		/*picture*/
+		.ambassador img {
+			width: 230px;
+			border-radius: 50%;
+			margin-bottom: 50px;
+			border: black;
+	   		border-style: solid;
+	    	border-width: medium;
+		}
+
+	/*Brand quote*/
+		.quote {
+			font-family: Lucida Calligraphy; 
+			font-size: 40px;
+			text-align: center;
+			padding: 100px;
+		}
+
+	/*slideshow*/
+		.container {
+		  margin: 50px auto;
+		  width: 429px;
+		  height: 429px;
+		  overflow: hidden;
+		  border: 6px solid;
+		  border-top-color: #000000;
+		  border-left-color: #000000;
+		  border-bottom-color: #000000;
+		  border-right-color: #000000;
+		  position: relative;
+		}
+		.photo {
+		  position: absolute;
+		  animation: round 20s infinite;
+		  opacity: 0;
+		  width: 429px;
+		}
+		@keyframes round {
+		  25% {
+		    opacity: 1;
+		  }
+		  40% {
+		    opacity: 0;
+		  }
+		}
+		-webkit-@keyframes round {
+		  25% {
+		    opacity: 1;
+		    -webkit-opacity: 1;
+		  }
+		  40% {
+		    opacity: 0;
+		    -webkit-opacity: 0;
+		  }
+		}
+		img:nth-child(1) {
+		  animation-delay: 16s;
+		}
+		 
+		img:nth-child(2) {
+		  animation-delay: 12s;
+		}
+		 
+		img:nth-child(3) {
+		  animation-delay: 8s;
+		}
+		 
+		img:nth-child(4) {
+		  animation-delay: 4s;
+		}
+
+		img:nth-child(5) {
+		  animation-delay: 0s;
+		}
+
+		/*slideshow section*/
+		.slideshow {
+			display: flex;
+			flex-direction: row;
+			justify-content: right;
+			align-items: center;
+			padding-left: 0px;
+			padding-right: 70px;
+		}
+
+		/*announcement of campaign*/
+		.announcement {
+			font-family: Calibri;
+			font-size: 30px;
+			color: black;
+		}
+
+/*About us section*/
+	/*title*/
+		#title {
+			padding-top: 15px;
+			font-size: 70px;
+			text-align: center;
+			font-family: Lucida Calligraphy;
+		}
+
+	/*about us section*/
+		.aboutus {
+			font-size: 20px;
+			padding: 100px;
+			padding-top: 40px;
+		}
+
+		.aboutus h1 {
+			font-family: Lucida Calligraphy;
+		}
+
+		.aboutus h2 {
+			font-family: calibri;
+			padding-bottom: 80px;
+			text-align: justify;
+		}
+		
+		/*What is A Stitch in Time*/
+			.introduction {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			.introduction img {
+				width: 400px;
+				height: 400px;
+				margin-left: 100px;
+				border-radius: 10%;
+			}
+
+			#wearemore {
+				margin-top: -70px;
+			}
+
+		/*What is our mission*/
+			.mission {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+			}
+
+			.mission img {
+				width: 400px;
+				border-radius: 10%;
+				margin-right: 100px;
+			}
+
+	/*values*/
+		/*title*/
+			#valuestitle {
+				padding-top: 70px;
+				font-family: Lucida Calligraphy;
+				padding: 100px;
+				padding-bottom: 40px;
+				margin-top: -90px;
+			}
+
+		/*values*/
+			.values {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				margin: 0 auto;
+				padding: 100px;
+				padding-top: 0px;
+				padding-right: 150px;
+			}
+
+		/*individual cards*/
+			.value {
+				display: flex;
+				background-color: white;
+				padding: 0px;
+				text-align: center;
+				border-radius: 10px;
+				height: 80px;
+				width: 220px;
+				align-items: center;
+				justify-content: space-around;
+				color: #7d111b;
+				font-family: Calibri;
+			}
+
+			.value h2 {
+				font-size: 30px;
+				margin: 40px;
+			}
+
+/*footer*/
+	.footer {
+		background-color: black; 
+		color: white;
+		padding: 2px;
+		text-align: right;
+		margin-top: 8px;
+		display: flex;
+		flex-direction: row;
+		box-shadow: 0px 3px 3px 5px #00000069;
+	}
+
+	.footer h3 {
+		color: white;
+		font-family: calibri light;
+		padding-right: 10px;
+		font-size: 15px;
+	}
+
+	#move {
+		margin-left: 30px;
+	}
+
+/* Keeping the website in place for a smaller screen size*/
+	@media (max-width: 576px) {
+	/*A Stitch in Time logo*/
+		.navigbar img {
+			margin: 16px;
+			width: 30px;
+			margin-left: -30px;
+		}
+	
